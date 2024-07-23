@@ -114,22 +114,34 @@ animals.push(donkey);
 console.log(animals);
 console.log(animals.length);
 
-
-
-
-
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+//choosing an array as the data structure to store friends because arrays hold a 0-indexed list of any number of any type of values.
+var friends = [];
 
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
  * move onto Part 2 in the file called "functions.js"
  */
+function getRandom(array) {
+  //Math.random() generates a random number between 0 (inclusive) and 1 (exclusive)
+  //multiplying this number by the length of the array gives a floating-point number between 0 (inclusive) and the array length (exclusive)
+  //Math.floor() then rounds this number down to the nearest whole number, ensuring you get a valid array index
+  return Math.floor(Math.random() * array.length);
+}
 
+var randomAnimal = getRandom(animals);
+var animalName = animals[randomAnimal];
+friends.push(animalName.name);
 
+console.log(friends);
+
+animals[randomAnimal]["friends"] = friends;
+
+console.log(animals);
 
 //////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE ////////////////////////////////////////////
