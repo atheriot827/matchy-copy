@@ -80,6 +80,42 @@ console.log(animal);
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var animals = [];
+
+animals.push(animal);
+
+console.log(animals);
+
+var duck = {
+  species: 'duck',
+  name: 'Jerome',
+  noises: ['quack', 'honk', 'sneeze', 'woosh']
+};
+
+animals.push(duck);
+
+console.log(animals);
+
+var cat = {
+  species: 'cat',
+  name: 'Puss in Boots',
+  noises: ['meow', 'purr', "hiss"]
+}
+
+var donkey = {
+  species: 'donkey',
+  name: 'Jack',
+  noises: ['hee-haw', 'snort']
+}
+
+animals.push(cat);
+animals.push(donkey);
+
+console.log(animals);
+console.log(animals.length);
+
+
+
 
 
 //////////////////////////////////////////////////////////////////////
