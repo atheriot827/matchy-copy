@@ -49,9 +49,21 @@ console.log(animal);
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
- *
+ * 
+ * Dot or Bracket Notation.
+ * Dot Notation only works with literal key names.
+ * objectName.key
+ * objectName["key"]
+ * 
+ * var key = "key1";
+ * objectName[key]
+ *    
  * 2. What are the different ways of accessing elements on arrays?
  *
+ * Bracket Notation.
+ * arrayName[index #]
+ * arrayName[arrayName.length-1]
+ * 
  * *******************************************************************
  */
 
