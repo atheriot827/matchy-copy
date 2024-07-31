@@ -32,20 +32,41 @@ function replace(animals, name, replacement) {
     for(var i = 0; i < animals.length; i++) {
         if(animals[i].name === name) {
             animals[i] = replacement;
-            return
+            return;
         }
     }
-    return null;
 }
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
+function remove(animals, name) {
+    for(var i = 0; i < animals.length; i++) {
+        if(animals[i].name === name) {
+            animals.splice(i, 1);
+            return;
+        }
+    }
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+function add(animals, animal) {
+    if(!animal.name || animal.name.length === 0) {
+        return;
+    }
+    if(!animal.species || animal.species.length === 0) {
+        return;
+    }
+    for(var i = 0; i < animals.length; i++) {
+        if(animals[i].name === animal.name) {
+            return;
+        }
+    }
+    animals.push(animal);
+}
 
 
 
